@@ -6,6 +6,8 @@
   </head>
   <body>
 
+
+
     <p>Welcome to Twittler: learning JQuery; Twiddling with Twitter</p>
 
     <button type="button">Generate a Twat!</button>
@@ -19,7 +21,8 @@
         $('button').on('click', function(){
           var tweetGenerator = streams.home[index];
           var addTweet = $('<div></div>');
-          addTweet.text(new Date + '@' + tweetGenerator.user + ': ' + tweetGenerator.message).appendTo("p");
+          var user = tweetGenerator.user
+          addTweet.text(new Date + '@' + tweetGenerator.user + ': ' + tweetGenerator.message).appendTo("p").addClass(user);
           index = index + 1;
         })
 
