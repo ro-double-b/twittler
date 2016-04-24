@@ -19,7 +19,7 @@
         $('button').on('click', function(){
           var tweetGenerator = streams.home[index];
           var addTweet = $('<div></div>');
-          addTweet.text('@' + tweetGenerator.user + ': ' + tweetGenerator.message).appendTo("p");
+          addTweet.text(new Date + '@' + tweetGenerator.user + ': ' + tweetGenerator.message).appendTo("p");
           index = index + 1;
         })
 
