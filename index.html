@@ -49,7 +49,7 @@
 
           var tweet = $('' + 
             '<div class="tweet">'+
-              '<a class="user" href=>@'+user+'</a>'+
+              '<a class="user" href="#" onClick="return false;">@'+user+'</a>'+
               '<div class="date">'+date+'</div>'+
               '<div class="message">'+message+'</div>'+
             '</div>'
@@ -60,14 +60,19 @@
           index = index + 1
   			})
 
+        $('.user').on('click', function() {
+          var test = ('<p>Hello!</p>')
+          event.preventDefault()
+          $('.follow').prepend(test)
 
+        })
 
   		});
   	</script>
 
 <!--     <script>
       $(document).ready(function(){
-        var index = 0
+        var index = 0twee
         $('button').on('click', function(){
           var tweetGenerator = streams.home[index];
           var addTweet = $('<div></div>');
