@@ -1,0 +1,20 @@
+header {
+	background-color: green;
+	
+}
+
+aside {
+	background-color: purple;
+	float: left;
+	width: 30%;
+}
+
+section {
+	background-color: blue;
+	float:right;
+	width:70%;
+}
+
+footer {
+	background-color: pink;
+}

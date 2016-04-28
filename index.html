@@ -7,18 +7,29 @@
   </head>
   <body>
 
+  	<header>
+  		<p>This is my header</p>
+  	</header>
 
+  	<aside>
+  		<p>This is my aside</p>
+  	</aside>
 
-    <p>Welcome to Twittler: learning JQuery; Twiddling with Twitter</p>
+  	<section>
+  		<p>This is my section</p>
+  	</section>
 
-    <button type="button">Generate a Twat!</button>
+  	<footer>
+  		<p>This is my footer</p>
+  	</footer>
 
-    <script>
+    <!-- <p>Welcome to Twittler: learning JQuery; Twiddling with Twitter</p> -->
 
+    <!-- <button type="button">Generate a Tweet!</button> -->
+
+<!--     <script>
       $(document).ready(function(){
-
         var index = 0
-
         $('button').on('click', function(){
           var tweetGenerator = streams.home[index];
           var addTweet = $('<div></div>');
@@ -26,12 +37,8 @@
           addTweet.text(new Date + '@' + tweetGenerator.user + ': ' + tweetGenerator.message).appendTo("p").addClass(user);
           index = index + 1;
         })
-
       });
-
-
-
-    </script>
+    </script> -->
   </body>
 
 
