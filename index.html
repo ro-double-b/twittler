@@ -44,11 +44,20 @@
   			var index = 0
   			$('button').on('click', function() {
   				var user = streams.home[index].user
-  				var tweet = streams.home[index].message
-  				var date = new Date
-  				var tweets = $('<div class="tweet"><p><span>@ '+user+'</span><span> '+date+' </span><span>'+tweet+'</span></div>').addClass(user)
-  				$('.all-tweets').prepend(tweets)
-  				index = index + 1
+          var date = new Date
+  				var message = streams.home[index].message
+
+          var tweet = $('' + 
+            '<div class="tweet">'+
+              '<a class="user" href=>@'+user+'</a>'+
+              '<div class="date">'+date+'</div>'+
+              '<div class="message">'+message+'</div>'+
+            '</div>'
+            ).addClass(user)
+
+          $('.all-tweets').prepend(tweet)
+          event.preventDefault()
+          index = index + 1
   			})
 
 
