@@ -4,30 +4,40 @@
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
     <link rel="stylesheet" type:"text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 
     <title>Twittler</title>
   </head>
   <body>
 
   	<header>
-  		<p>This is my header</p>
+  		<p>Welcome to Twittler: learing jQuery Twiddling with Twitter</p>
   	</header>
 
   	<aside>
-  		<p>This is my aside</p>
+  		<div id="profile">
+  			<p>This is where the users profile will be displayed</p>
+  		</div>
+  		<div id="follow">
+  		<p>This is where the tweets of the users followers will be displayed when clicked</p>
+  		</div>
   	</aside>
 
   	<article>
-  		<p>This is my article</p>
+  		<div class="your-tweet">
+  			<p>This is where the user can generate his own tweets</p>
+  			<input id="write" type="text">
+  			<button>Generate a tweet!</button>
+  		</div>
+
+  		<div class="all-tweets">
+  			<p>This is where all of the tweets will be displayed</p>
+  		</div>
   	</article>
 
   	<footer>
   		<p>This is my footer</p>
   	</footer>
-
-    <!-- <p>Welcome to Twittler: learning JQuery; Twiddling with Twitter</p> -->
-
-    <!-- <button type="button">Generate a Tweet!</button> -->
 
 <!--     <script>
       $(document).ready(function(){
