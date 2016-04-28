@@ -39,6 +39,21 @@
   		<p>This is my footer</p>
   	</footer>
 
+  	<script>
+  		$(document).ready(function() {
+  			var index = 0
+  			$('button').on('click', function() {
+  				var user = streams.home[index].user
+  				var tweet = streams.home[index].message
+  				var tweets = $('<div class="tweet"><p>'+user+'</p><p>'+tweet+'</p></div>')
+  				$('.all-tweets').prepend(tweets)
+  				index = index + 1
+  			})
+
+
+  		});
+  	</script>
+
 <!--     <script>
       $(document).ready(function(){
         var index = 0
