@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	background-color: lightgrey;
+}
+
+
 /*
 =========================
 SECTIONS
@@ -54,7 +59,7 @@ SECTIONS
 */
 
 header {
-	height: 2.5vh;
+	height: 10vh;
 	border-bottom: 3px solid grey;
 	font-family: 'Cinzel', serif;
 	font-size: 25px;
@@ -62,8 +67,9 @@ header {
 
 aside {
 	float: left;
-	width: 35%;
-	height: 95vh;
+	width: 300px;
+	height: 90vh;
+	margin-left: 30px;
 }
 
 article {
@@ -94,17 +100,20 @@ footer {
 
 .tweet {
 	width:100%;
-	height: 50px;
 	background-color: grey;
+	border: 2px solid black;
+}
+
+.user {
+	background-color: white;
+}
+
+.date {
+	float: right;
 }
 
 
-#profile {
-	width: 100%;
-	height: 200px;
-	border: 3px solid grey;
-	border-top-width: 1.5px;
-}
+
 
 #follow {
 	width: 100%;
@@ -117,6 +126,39 @@ footer {
 	width: 95%;
 }
 
+/*
+=====================
+PROFILE
+=====================
+*/
 
-
+#profile {
+	width: 100%;
+	height: 170px;
+	background-color: white;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+#coverPhoto {
+	width: 100%;
+	border-radius: 10px;
+}
+#profilePhoto {
+	width: 25%;
+	border: 3px solid white;
+	border-radius: 10px;
+	position: relative;
+	left: 20px;
+	bottom: 40px;
+}
+#name {
+	float: right;
+	margin-right:40px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: 'Cinzel', serif;
+}
+.class {
+	float:right;
+}
 

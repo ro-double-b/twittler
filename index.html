@@ -16,9 +16,11 @@
 
   	<aside>
   		<div id="profile">
-  			<p>This is where the users profile will be displayed</p>
+  			<img id="coverPhoto" src="http://www.allankintz.com/photos/facebook-covers/FBCover-GoldenGate.jpg">
+        <img id="profilePhoto" src="https://pbs.twimg.com/profile_images/655502297116479489/OnaK3J6K.jpg">
+        <div id="name">@ro_double_b</div>
   		</div>
-  		<div id="follow">
+  		<div class="follow">
   		<p>This is where the tweets of the users followers will be displayed when clicked</p>
   		</div>
   	</aside>
@@ -44,13 +46,13 @@
   			var index = 0
   			$('button').on('click', function() {
   				var user = streams.home[index].user
-          var date = new Date
+          var tweetDate = new Date
   				var message = streams.home[index].message
 
           var tweet = $('' + 
             '<div class="tweet">'+
-              '<a class="user" href="#" onClick="return false;">@'+user+'</a>'+
-              '<div class="date">'+date+'</div>'+
+              '<a class="user" href="#">@'+user+'</a>'+
+              '<div class="date">'+tweetDate+'</div>'+
               '<div class="message">'+message+'</div>'+
             '</div>'
             ).addClass(user)
@@ -60,9 +62,8 @@
           index = index + 1
   			})
 
-        $('.user').on('click', function() {
-          var test = ('<p>Hello!</p>')
-          event.preventDefault()
+        $('button').on('click', function() {
+          var test = $('<p>hello</p>')
           $('.follow').prepend(test)
 
         })
