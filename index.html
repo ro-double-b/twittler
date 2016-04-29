@@ -68,15 +68,23 @@
   				  var message = streams.home[i].message
 
             var tweet = $('' + 
-              '<div class="tweet">'+
-                '<span class="user" data-user='+user+'>@'+user+'<span>'+
+              '<div class="tweet" data-user='+user+'>'+
+                '<span class="user">@'+user+'<span>'+
                 '<span class="date">'+tweetDate+'</span>'+
                 '<span class="message">'+message+'</span>'+
               '</div>')
 
           $('.all-tweets').prepend(tweet)
           index = index + 1
-  			}}, 1000)
+  			}
+
+// Displayes the tweet you click on in the follow section
+        $('.user').on("click", function() {
+          var allTweets = $(this)
+          $('.follow').prepend(allTweets)
+        });
+
+      }, 1000)
 
         // $('button').on('click', function() {
         //   var test = $('<p>'+streams.home.length+'</p>')
