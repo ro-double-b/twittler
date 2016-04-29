@@ -32,8 +32,9 @@
   			<button>Generate a tweet!</button>
   		</div>
 
+<!-- This is where all tweets are populated -->
   		<div class="all-tweets">
-  			<p>This is where all of the tweets will be displayed</p>
+  			<p></p>
   		</div>
   	</article>
 
@@ -47,7 +48,8 @@
         // var $body = $('body');
         // $body.html('');
   			
-        var index = streams.home.length - 1
+// Sets the index to the first index, which will call on the streams.home  
+        var index = 0
 
         // while(index >= 0){
         //   var tweet = streams.home[index];
@@ -56,7 +58,8 @@
         //   $tweet.appendTo($body);
         //   index -= 1;
         // }
-        
+
+// Displayes tweets in the correct section 
   			setInterval(function() {
   			  for(var i = index; i < streams.home.length; i ++) { 
 
