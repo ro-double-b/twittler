@@ -51,11 +51,10 @@
 
           var tweet = $('' + 
             '<div class="tweet">'+
-              '<a class="user" href="#">@'+user+'</a>'+
-              '<div class="date">'+tweetDate+'</div>'+
-              '<div class="message">'+message+'</div>'+
-            '</div>'
-            ).addClass(user)
+              '<span class="user" data-user='+user+'>@'+user+'<span>'+
+              '<span class="date">'+tweetDate+'</span>'+
+              '<span class="message">'+message+'</span>'+
+            '</div>')
 
           $('.all-tweets').prepend(tweet)
           event.preventDefault()
