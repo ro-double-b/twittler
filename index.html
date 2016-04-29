@@ -4,14 +4,14 @@
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
     <link rel="stylesheet" type:"text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Gidugu' rel='stylesheet' type='text/css'>
 
     <title>Twittler</title>
   </head>
   <body>
 
   	<header>
-  		<p>Welcome to Twittler: learing jQuery Twiddling with Twitter</p>
+  		<p><span id="title">Twittler</span>: learing jQuery Twiddling with Twitter</p>
   	</header>
 
   	<aside>
@@ -21,7 +21,7 @@
         <div id="name">@ro_double_b</div>
   		</div>
   		<div class="follow">
-  		<p>This is where the tweets of the users followers will be displayed when clicked</p>
+  		<p></p>
   		</div>
   	</aside>
 
@@ -74,24 +74,22 @@
                 '<span class="message">'+message+'</span>'+
               '</div>')
 
-          $('.all-tweets').prepend(tweet)
+          $('.all-tweets').prepend(tweet).slideDown()
           index = index + 1
   			}
 
 // Displayes the tweet you click on in the follow section
-        $('button').on("click", function() {
-          for(var i = 0; i < streams.users.shawndrost.length; i++) {
-            var allTweets = streams.users.shawndrost[i].message
-            $('.follow').prepend($('<p>'+allTweets+'</p>'))
-          }
-        });
-
         // $('button').on("click", function() {
-        //   var allTweets = streams.users.shawndrost[0].message
-        //   $('.follow').prepend($('<p>'+allTweets+'</p>'))
+        //   for(var i = 0; i < streams.users.shawndrost.length; i++) {
+        //     var allTweets = streams.users.shawndrost[i].message
+        //     $('.follow').after($('<p>'+allTweets+'</p>'))
+        //   }
         // });
 
-
+        $('.all-tweets').on('click', function() {
+          var hello = $('.tweet').data('user')
+          $('.follow').after(hello).closest()
+        })
 
       }, 1000)
 
