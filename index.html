@@ -43,29 +43,29 @@
 
   	<script>
   		$(document).ready(function() {
-  			var index = 0
-  			$('button').on('click', function() {
-  				var user = streams.home[index].user
-          var tweetDate = new Date
-  				var message = streams.home[index].message
+  			var index = streams.home.length - 1
+  			setInterval(function() {
+  			  for(var i = index; i < streams.home.length; i ++) { 
 
-          var tweet = $('' + 
-            '<div class="tweet">'+
-              '<span class="user" data-user='+user+'>@'+user+'<span>'+
-              '<span class="date">'+tweetDate+'</span>'+
-              '<span class="message">'+message+'</span>'+
-            '</div>')
+        	  var user = streams.home[i].user
+            var tweetDate = new Date
+  				  var message = streams.home[i].message
+
+            var tweet = $('' + 
+              '<div class="tweet">'+
+                '<span class="user" data-user='+user+'>@'+user+'<span>'+
+                '<span class="date">'+tweetDate+'</span>'+
+                '<span class="message">'+message+'</span>'+
+              '</div>')
 
           $('.all-tweets').prepend(tweet)
-          event.preventDefault()
           index = index + 1
-  			})
+  			}}, 1000)
 
-        $('button').on('click', function() {
-          var test = $('<p>hello</p>')
-          $('.follow').prepend(test)
-
-        })
+        // $('button').on('click', function() {
+        //   var test = $('<p>'+streams.home.length+'</p>')
+        //   $('.follow').prepend(test)
+        // })
 
   		});
   	</script>
