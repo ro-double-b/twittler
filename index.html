@@ -79,10 +79,19 @@
   			}
 
 // Displayes the tweet you click on in the follow section
-        $('.user').on("click", function() {
-          var allTweets = $(this)
-          $('.follow').prepend(allTweets)
+        $('button').on("click", function() {
+          for(var i = 0; i < streams.users.shawndrost.length; i++) {
+            var allTweets = streams.users.shawndrost[i].message
+            $('.follow').prepend($('<p>'+allTweets+'</p>'))
+          }
         });
+
+        // $('button').on("click", function() {
+        //   var allTweets = streams.users.shawndrost[0].message
+        //   $('.follow').prepend($('<p>'+allTweets+'</p>'))
+        // });
+
+
 
       }, 1000)
 
