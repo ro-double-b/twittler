@@ -182,3 +182,12 @@ PROFILE
 	float:right;
 }
 
+.tweetClick {
+	width:95%;
+	height: 50px;
+	background-color: lightgrey;
+	border-radius: 10px;
+	margin-top: 5px;
+	font-family: 'Gidugu', serif;
+}
+
