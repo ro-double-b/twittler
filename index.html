@@ -59,44 +59,37 @@
         //   index -= 1;
         // }
 
-// Displayes tweets in the correct section 
+// Generates Tweets when the page loads
   			setInterval(function() {
   			  for(var i = index; i < streams.home.length; i ++) { 
-
         	  var user = streams.home[i].user
             var tweetDate = new Date
   				  var message = streams.home[i].message
-
             var tweet = $('' + 
               '<div class="tweet" data-user='+user+'>'+
                 '<span class="user">@'+user+'<span>'+
                 '<span class="date">'+tweetDate+'</span>'+
                 '<span class="message">'+message+'</span>'+
               '</div>')
-
           $('.all-tweets').prepend(tweet).slideDown()
           index = index + 1
-  			}
+  			  }
+        }, 1000)
 
-// Displayes the tweet you click on in the follow section
-        // $('button').on("click", function() {
-        //   for(var i = 0; i < streams.users.shawndrost.length; i++) {
-        //     var allTweets = streams.users.shawndrost[i].message
-        //     $('.follow').after($('<p>'+allTweets+'</p>'))
-        //   }
-        // });
-
+// Places tweets in the follow element when tweet is clicked
         $('.all-tweets').on('click', function() {
-          var hello = $('.tweet').data('user')
-          $('.follow').after(hello).closest()
+          var userClicked = $('.tweet').data('user')
+          for(var i = 0; i < streams.users[userClicked].length; i++) {
+            var tweetObj = streams.users[userClicked][i]
+            var tweet = $(''+
+              '<div>'+userClicked+
+              '<span>'+tweetObj.message+'</span>'+
+              '<span>'+tweetObj.created_at+
+              '</div>')
+            $('.follow').after(tweet)
+          }
         })
 
-      }, 1000)
-
-        // $('button').on('click', function() {
-        //   var test = $('<p>'+streams.home.length+'</p>')
-        //   $('.follow').prepend(test)
-        // })
 
   		});
   	</script>
