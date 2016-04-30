@@ -76,15 +76,16 @@
   			  }
         }, 1000)
 
-// Places tweets in the follow element when tweet is clicked
+// Places tweets in the follow element when
         $('.all-tweets').on('click', function() {
           var userClicked = $('.tweet').data('user')
           for(var i = 0; i < streams.users[userClicked].length; i++) {
             var tweetObj = streams.users[userClicked][i]
             var tweet = $(''+
-              '<div>'+userClicked+
+              '<div>'+
+              '<span>'+userClicked+'</span>'+
               '<span>'+tweetObj.message+'</span>'+
-              '<span>'+tweetObj.created_at+
+              '<span>'+tweetObj.created_at+'</span>'+
               '</div>')
             $('.follow').after(tweet)
           }
