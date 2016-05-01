@@ -73,9 +73,9 @@
   				  var message = streams.home[i].message
             var tweet = $('' + 
               '<div class="tweet" data-user='+user+'>'+
-                '<span class="user">@'+user+'<span>'+
-                '<span class="date">'+tweetDate+'</span>'+
-                '<span class="message">'+message+'</span>'+
+                '<span class="userTweet">@'+user+'</span>'+
+                '<span class="tweetDate">'+tweetDate+'</span>'+
+                '<span class="tweetMessage">'+message+'</span>'+
               '</div>')
           $('.all-tweets').prepend(tweet).slideDown()
           index = index + 1
@@ -90,9 +90,9 @@
             var tweetObj = streams.users[userClicked][i]
             var tweet = $(''+
               '<div class="tweetClick">'+
-              '<span>'+userClicked+'</span>'+
-              '<span>'+tweetObj.message+'</span>'+
-              '<span>'+tweetObj.created_at+'</span>'+
+              '<span class="userTweet">@'+userClicked+'</span>'+
+              '<span class="tweetDate">'+tweetObj.created_at+'</span>'+
+              '<span class="tweetMessage">'+tweetObj.message+'</span>'+
               '</div>')
             $('.follow').prepend(tweet).slideDown()
           }

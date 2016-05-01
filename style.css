@@ -104,6 +104,7 @@ PROFILE/FOLLOWING
 }
 #profile {
 	width: 100%;
+	height: 35%;
 	margin:bottom 5%;
 	background-color: white;
 }
@@ -177,16 +178,28 @@ TO BE UPDATED
 
 
 .all-tweets {
-	/*width:100%;*/
-	height: 85vh; 
+	height: 100%; 
 	overflow: scroll;
 }
 
 .follow {
-	height: 50vh;
+	height: 65%;
 	overflow: scroll;
 }
 
+.userTweet {
+	font-size: 3vh;
+	color: blue;
+}
+.tweetDate {
+	color: darkgray;
+	font-size: 1.75vh;
+}
+.tweetMessage {
+	display:block;
+	font-size: 2vh;
+	text-align: center;
+}
 
 
 
