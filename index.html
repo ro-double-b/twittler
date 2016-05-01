@@ -6,37 +6,42 @@
     <link rel="stylesheet" type:"text/css" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Gidugu' rel='stylesheet' type='text/css'>
     <title>Twittler</title>
-  
   </head>
+ 
   <body>
+
   	<header>
   		<p><span id="title">Twittler</span>: learing jQuery Twiddling with Twitter</p>
   	</header>
 
-  <section>  
-  	<aside class="pageLeft">
-  		<div id="profile">
-  			<img id="coverPhoto" src="http://www.allankintz.com/photos/facebook-covers/FBCover-GoldenGate.jpg">
-        <img id="profilePhoto" src="https://pbs.twimg.com/profile_images/655502297116479489/OnaK3J6K.jpg">
-        <p id="name">@ro_double_b</p>
-  		</div>
-  		<div class="follow">
-  		<p></p>
-  		</div>
-  	</aside>
+    <section> 
 
-  	<article class="pageRight">
-  		<div class="your-tweet">
-  			<p>This is where the user can generate his own tweets</p>
-  			<input id="write" type="text">
-  			<button>Generate a tweet!</button>
-  		</div>
+    	<article class="pageLeft">
+<!-- Pofile information -->
+        <div id="profile">
+  		  	<img id="coverPhoto" src="http://www.allankintz.com/photos/facebook-covers/FBCover-GoldenGate.jpg">
+          <img id="profilePhoto" src="https://pbs.twimg.com/profile_images/655502297116479489/OnaK3J6K.jpg">
+          <p id="name">@ro_double_b</p>
+    		</div>
+<!-- Follower's tweets when clicked -->
+  	   	<div class="follow">
+  		    <p></p>
+  	   	</div>
+      </article>
 
+  	 <article class="pageRight">
+<!-- User tweet generator box -->
+  		  <div class="your-tweet">
+  			 <p>This is where the user can generate his own tweets</p>
+  			 <input id="write" type="text">
+  			 <button>Generate a tweet!</button>
+  		  </div>
 <!-- This is where all tweets are populated -->
-  		<div class="all-tweets">
-  			<p></p>
-  		</div>
-  	</article>
+  		  <div class="all-tweets">
+  			 <p></p>
+  		  </div>
+  	 </article>
+     
     </section>
 
   	<footer>

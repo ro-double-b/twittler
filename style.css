@@ -99,7 +99,7 @@ PROFILE/FOLLOWING
 	float:left;
 	height: 100%;
 	width: 49%;
-	background-color: grey;
+
 }
 #profile {
 	width: 100%;
@@ -120,10 +120,10 @@ PROFILE/FOLLOWING
 }
 #name {
 	float: right;
-	font-size: 2vw;
+	font-size: 2.5vw;
 	margin-right: 7.75em;
 	margin-top: 1%;
-	font-family: 'Cinzel', serif;
+	font-family: 'Gidugu', serif;
 }
 /*
 =========================
@@ -134,7 +134,6 @@ GENERATE/TWEETS
 	float:right ;
 	height: 100%;
 	width: 49%;
-	background-color: grey;
 }
 
 
@@ -155,13 +154,6 @@ TO BE UPDATED
 	font-family: 'Gidugu', serif;
 }
 
-
-
-
-.class {
-	float:right;
-}
-
 .tweetClick {
 	width:95%;
 	height: 50px;
@@ -169,40 +161,26 @@ TO BE UPDATED
 	border-radius: 10px;
 	margin-top: 5px;
 	font-family: 'Gidugu', serif;
+
 }
 
 
-.your-tweet {
-	width: 100%;
-	height: 10vh;
-	border: 3px solid grey;
-}
+
 
 .all-tweets {
-	width:100%;
+	/*width:100%;*/
 	height: 70vh; 
 	overflow: scroll;
-	border: 3px solid grey;
+}
+
+.follow {
+	overflow: scroll;
 }
 
 
 
 
-.date {
-	float: right;
-}
 
 
 
-
-#follow {
-	width: 100%;
-	height: 60%;
-	border: 3px solid grey;
-	border-top-width: 1.5px ;
-}
-
-#write {
-	width: 95%;
-}
 
