@@ -31,11 +31,11 @@
 
   	 <article class="pageRight">
 <!-- User tweet generator box -->
-  		  <div class="your-tweet">
+<!--   		  <div class="your-tweet">
   			 <p>This is where the user can generate his own tweets</p>
   			 <input id="write" type="text">
   			 <button>Generate a tweet!</button>
-  		  </div>
+  		  </div> -->
 <!-- This is where all tweets are populated -->
   		  <div class="all-tweets">
   			 <p></p>
@@ -45,7 +45,7 @@
     </section>
 
   	<footer>
-  		<p>This is my footer</p>
+  		<p>Created By Robb Marsee For Hackreactor</p>
   	</footer>
 
   	<script>
@@ -86,7 +86,6 @@
         $('.all-tweets').on('click', function() {
           var userClicked = $('.tweet').data('user')
           $('.tweetClick').remove()
-          // $('.follow').before(userClicked)
           for(var i = 0; i < streams.users[userClicked].length; i++) {
             var tweetObj = streams.users[userClicked][i]
             var tweet = $(''+

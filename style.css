@@ -86,9 +86,10 @@ section {
 
 }
 footer {
-	height: 2vh;
+	height: 1vh;
 	width: 100%;
-	background-color: green;
+	font-size: 10px;
+	text-align: center;
 }
 /*
 =========================
@@ -137,7 +138,6 @@ GENERATE/TWEETS
 }
 
 .your-tweet {
-
 	width: 95%
 	height: 45vh;
 	border: 3px solid white;
@@ -155,7 +155,7 @@ TO BE UPDATED
 
 .tweet {
 	width:95%;
-	height: 50px;
+	height: 70px;
 	background-color: lightgrey;
 	border-radius: 10px;
 	margin-top: 5px;
@@ -164,7 +164,7 @@ TO BE UPDATED
 
 .tweetClick {
 	width:95%;
-	height: 50px;
+	height: 70px;
 	background-color: lightgrey;
 	border-radius: 10px;
 	margin-top: 5px;
@@ -178,7 +178,7 @@ TO BE UPDATED
 
 .all-tweets {
 	/*width:100%;*/
-	height: 70vh; 
+	height: 85vh; 
 	overflow: scroll;
 }
 
