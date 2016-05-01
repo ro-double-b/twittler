@@ -46,7 +46,6 @@
 
   	<footer>
   		<p>Created By Robb Marsee For Hackreactor</p>
-      <button>PRESS THIS FOR TIME</button>
   	</footer>
 
   	<script>
@@ -91,18 +90,13 @@
             var tweetObj = streams.users[userClicked][i]
             var tweet = $(''+
               '<div class="tweetClick">'+
-              '<span class="userTweet">@'+userClicked+'         </span>'+
+              '<span class="userTweet">@'+userClicked+'</span>'+
               '<span class="tweetDate">'+tweetObj.created_at+'</span>'+
               '<span class="tweetMessage">'+tweetObj.message+'</span>'+
               '</div>')
             $('.follow').prepend(tweet).slideDown()
           }
         })
-
-        $('button').on('click', function() {
-          alert(new Date)
-        })
-
 
   		});
   	</script>
