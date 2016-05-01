@@ -136,6 +136,14 @@ GENERATE/TWEETS
 	width: 49%;
 }
 
+.your-tweet {
+
+	width: 95%
+	height: 45vh;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
 
 
 /*
@@ -160,6 +168,7 @@ TO BE UPDATED
 	background-color: lightgrey;
 	border-radius: 10px;
 	margin-top: 5px;
+	margin-right: 0px;
 	font-family: 'Gidugu', serif;
 
 }
@@ -174,6 +183,7 @@ TO BE UPDATED
 }
 
 .follow {
+	height: 50vh;
 	overflow: scroll;
 }
 

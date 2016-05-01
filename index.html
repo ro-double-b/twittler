@@ -41,7 +41,7 @@
   			 <p></p>
   		  </div>
   	 </article>
-     
+
     </section>
 
   	<footer>
@@ -95,7 +95,7 @@
               '<span>'+tweetObj.message+'</span>'+
               '<span>'+tweetObj.created_at+'</span>'+
               '</div>')
-            $('.follow').after(tweet).slideDown()
+            $('.follow').prepend(tweet).slideDown()
           }
         })
 
